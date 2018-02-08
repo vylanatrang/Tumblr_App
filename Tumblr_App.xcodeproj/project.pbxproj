@@ -18,6 +18,7 @@
 		EF16D1272022ED9C006BCDA8 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF16D1262022ED9C006BCDA8 /* PhotosViewController.swift */; };
 		EF16D129202641F6006BCDA8 /* PhotoCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF16D128202641F6006BCDA8 /* PhotoCellTableViewCell.swift */; };
 		EF16D12A20265FD4006BCDA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF16D0FE2022EAFE006BCDA8 /* Assets.xcassets */; };
+		EF39903E202C170500F3B447 /* PhotosDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF39903D202C170500F3B447 /* PhotosDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		EF16D1192022EAFE006BCDA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF16D1262022ED9C006BCDA8 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		EF16D128202641F6006BCDA8 /* PhotoCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCellTableViewCell.swift; sourceTree = "<group>"; };
+		EF39903D202C170500F3B447 /* PhotosDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				EF16D1262022ED9C006BCDA8 /* PhotosViewController.swift */,
+				EF39903D202C170500F3B447 /* PhotosDetailsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 			files = (
 				EF16D0F82022EAFE006BCDA8 /* AppDelegate.swift in Sources */,
 				EF16D129202641F6006BCDA8 /* PhotoCellTableViewCell.swift in Sources */,
+				EF39903E202C170500F3B447 /* PhotosDetailsViewController.swift in Sources */,
 				EF16D1272022ED9C006BCDA8 /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

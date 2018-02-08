@@ -14,6 +14,26 @@ class PhotosViewController: UIViewController,  UITableViewDataSource, UITableVie
     var posts: [[String: Any]] = []
     @IBOutlet weak var tableView: UITableView!
     
+    //LAB 2
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! PhotosDetailsViewController
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let post = posts[indexPath.row]
+        if let photos = post["photos"] as? [[String: Any]] {
+            let photo = photos[0]
+            let originalSize = photo["original_size"] as! [String: Any]
+            let urlString = originalSize["url"] as! String
+            vc.photoURL = urlString
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    //LAB 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
